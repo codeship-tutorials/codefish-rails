@@ -21,8 +21,8 @@ test:
 production:
   adapter: mysql2
   encoding: utf8
-  database: codefish
-  host: codefish-clemens.azva.dotcloud.net
-  username: root
-  password: d1Fu64sCD2Uyk9iPUmPl
-  port: 2757
+  database: mysql
+  host: <%= ENV["DOTCLOUD_DATA_MYSQL_HOST"] %>
+  username: <%= ENV["DOTCLOUD_DATA_MYSQL_LOGIN"] %>
+  password: <%= ENV["DOTCLOUD_DATA_MYSQL_PASSWORD"] %>
+  port: <%= ENV["DOTCLOUD_DATA_MYSQL_PORT"] %>
