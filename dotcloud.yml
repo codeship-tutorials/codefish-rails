@@ -1,4 +1,4 @@
 www:
   type: ruby
   config:
-    ruby-version: 2.0.0
+    ruby-version: 1.9.3
