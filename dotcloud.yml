@@ -1,3 +1,4 @@
 www:
   type: ruby
-  approot: .
+  config:
+    ruby-version: 2.0.0
