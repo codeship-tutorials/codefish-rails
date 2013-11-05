@@ -18,12 +18,11 @@ test:
   pool: 5
   timeout: 5000
 
-<% env = JSON.parse(File.read('/home/dotcloud/environment.json')) %>
 production:
   adapter: mysql2
   encoding: utf8
-  database: mysql
-  host: <%= env["DOTCLOUD_DATA_MYSQL_HOST"] %>
-  username: <%= env["DOTCLOUD_DATA_MYSQL_LOGIN"] %>
-  password: <%= env["DOTCLOUD_DATA_MYSQL_PASSWORD"] %>
-  port: <%= env["DOTCLOUD_DATA_MYSQL_PORT"] %>
+  database: codefish
+  host: codefish-clemens.azva.dotcloud.net
+  username: root
+  password: d1Fu64sCD2Uyk9iPUmPl
+  port: 2757
