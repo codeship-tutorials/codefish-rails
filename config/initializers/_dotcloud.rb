@@ -1,3 +1,5 @@
 if Rails.env.production?
-  ENV.update JSON.parse(File.read('/home/dotcloud/environment.json'))
+  JSON.parse(File.read('/home/dotcloud/environment.json')).each do |variable, value|
+    ENV[variable] = value.to_s
+  end
 end
